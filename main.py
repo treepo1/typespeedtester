@@ -8,8 +8,8 @@ TEXTOS = ["o rato roeu a roupa do rei de roma", "3 pratos de trigo para 3 tigres
 
 def menu(stdscr):
     stdscr.clear()
-    stdscr.addstr(10,10,"Typing test")
-    stdscr.addstr(15,15,"Would you like to start? Press any key")
+    stdscr.addstr(10,10,"Teste de Digitação")
+    stdscr.addstr(15,15,"Aperte qualquer tecla")
     stdscr.refresh()
     stdscr.getkey()
 
@@ -68,7 +68,7 @@ def main(stdscr):
     menu(stdscr)
     while True:
         wpm(stdscr)
-        stdscr.addstr(2,0,"Completed! Press any key to continue")
+        stdscr.addstr(2,0,"Completo! Aperte qualquer tecla para continuar")
         key =stdscr.getkey()
         if ord(key) == 27:
             break
